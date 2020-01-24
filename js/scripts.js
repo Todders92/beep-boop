@@ -1,5 +1,5 @@
 // Business logic below this line:
-
+var phrase1 = "im sorry jon"
 // User logic below this line:
 $(document).ready(function() {
   $("form#form").submit(function(event) {
@@ -10,13 +10,10 @@ $(document).ready(function() {
       alert("Make sure you are entering a number")
     } else 
       for (var i = 0; i <= numbers; i ++){
-        // numbers.forEach(function(number) {
-          // if (numbers[0] === 3) {
-          // numbers[i] = "im sorry"
-          // var newI = "im sorry"
-          // });
+          if (i === 3) {
+            var i = phrase1
+          }
           $("#results ul").append("<li>" + i +"</li>")
-        // }
       };
       $("#results").show();
   });
