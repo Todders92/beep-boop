@@ -1,19 +1,27 @@
 // Business logic below this line:
-var numberFun = function(number) {
-  var numbers =[];
-  for (var i = 0; i<= number; i += 1) {
-    numbers.push(i);
-  }
-  for (var i = 0; i <= numbers; i += 1){
-    console.log(numbers)
-  }
-};
-// User logic below this line:
+
+// user logic below this line:
 $(document).ready(function() {
   $("form#form").submit(function(event) {
     event.preventDefault();
-    var inputNumber = parseInt($("input#input-number").val());
-    numberFun(number);
-    $("#results").show();
+    var numbers = parseInt($("input#input-number").val());
+    console.log(numbers);
+    if (isNaN(numbers)) {
+      alert("Make sure you are entering a number")
+    } else 
+    for (var index = 0; index <= numbers; index += 1) {
+      if (index.toString().includes("3") && index / 3 === 1) {
+        numbers[index] = "I'm sorry Dave, I'm afraid I can't do that.";
+      } else if (index.toString().includes("3")) {
+        numbers[index] = "I'm sorry, Dave. I'm afraid I can't do that.";
+      } else if (index.toString().includes("2")) {
+        numbers[index] = "Boop!";
+      } else if (index.toString().includes("1")) {
+        numbers[index] = "Beep!";
+      }
+          $("#results ul").append("<li>" + index +"</li>")
+          console.log(numbers)
+      };
+      $("#results").show();
   });
 });
