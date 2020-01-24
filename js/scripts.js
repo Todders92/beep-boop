@@ -4,7 +4,8 @@
 $(document).ready(function() {
   $("form#form").submit(function(event) {
     event.preventDefault();
-    var numbers =  parseInt($("input.input-number").val());
+    var numbers =  $("input.input-number").val();
+    var numbers = parseInt(numbers);
     var newArray = [];
     newArray.push(numbers);
     newArray.forEach(function() {
@@ -14,11 +15,11 @@ $(document).ready(function() {
     //   alert("Make sure you are entering a number")
     // } else 
       for (var index = 0; index <= numbers; index += 1) {
-        if (index.toString().includes("3")) {
+        if (index.toString().includes("3") === true) {
           numbers[index] = "///";
-        } else if (index.toString().includes("2")) {
+        } else if (index.toString().includes("2") === true) {
           numbers[index] = "-";
-        } else if (index.toString().includes("1")) {
+        } else if (index.toString().includes("1") === true) {
           numbers[index] = ".....";
         }
             $("#results ul").append("<li>" + index +"</li>")
