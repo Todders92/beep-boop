@@ -10,9 +10,7 @@ $(document).ready(function() {
       alert("Make sure you are entering a number")
     } else 
     for (var index = 0; index <= numbers; index += 1) {
-      if (index.toString().includes("3") && index / 3 === 1) {
-        numbers[index] = "I'm sorry Dave, I'm afraid I can't do that.";
-      } else if (index.toString().includes("3")) {
+      if (index.toString().includes("3")) {
         numbers[index] = "I'm sorry, Dave. I'm afraid I can't do that.";
       } else if (index.toString().includes("2")) {
         numbers[index] = "Boop!";
