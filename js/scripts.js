@@ -22,7 +22,7 @@ $(document).ready(function() {
         } else if (index.toString().includes("1") === true) {
           numbers[index] = ".....";
         }
-            $("#results ul").append("<li>" + index +"</li>")
+            $(".results ul").append("<li>" + index +"</li>")
         };
       });
       $("#results").show();
