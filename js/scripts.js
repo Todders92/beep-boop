@@ -10,25 +10,21 @@ $(document).ready(function() {
     var numbers =  $("input.input-number").val();
     var numbers = parseInt(numbers);
     var newArray = [];
-    newArray.push(numbers);
-    newArray.forEach(function() {
     console.log(numbers);
-    console.log(newArray)
     // if (isNaN(numbers)) {
     //   alert("Make sure you are entering a number")
     // } else 
       for (var index = 0; index <= numbers; index += 1) {
         if (index.toString().includes("3")) {
-          newArray[index] = "///";
+          newArray[index] = "///"
         } else if (index.toString().includes("2")) {
-          newArray[index] = "-";
+          newArray[index] = "-"
         } else if (index.toString().includes("1")) {
-          newArray[index] = ".....";
+          newArray[index] = "....."
         } else {
-
+          newArray[index] = index
         }
       };
-      });
       for (i = 0; i < newArray.length; i ++) {
         makeItem(newArray[i])
         $("#results").show();
