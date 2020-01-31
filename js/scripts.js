@@ -19,7 +19,6 @@ $(document).ready(function() {
         makeItem(i)
       }
     };
-    
+    $(".results").show();
   });
-  $(".results").show();
 });
