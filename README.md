@@ -10,34 +10,30 @@ _This webpage has the user input a number, and changes digits of the inputted nu
 
 ## Specs
 
-1. _The Program returns an error if the input doesn't contain numbers_
-    *   _Example Input: dog_
-    *   _Example Output: error: enter a number_
-
-2. _The program returns a range of numbers from 0 to the users inputted numbers_
+1. _The program returns a range of numbers from 0 to the users inputted numbers_
     *	_Example Input: 5_
     *   _Example Output: 0, 1, 2, 3, 4, 5_ 
 
-3. _The program recognizes the number 3 in the return of numbers and changes it to the phrase "I'm sorry Dave. I'm afraid I can't do that."_
+2. _The program recognizes the number 3 in the return of numbers and changes it to the phrase "I'm sorry Dave. I'm afraid I can't do that."_
     *	_Example Input: 5_
     *   _Example Output: 0, 1, 2, I'm sorry Dave. I'm afraid I can't do that., 4, 5_
 
-4. _The program recognizes the number 2 in the return of numbers and changes it to the phrase "Boop!"_
+3. _The program recognizes the number 2 in the return of numbers and changes it to the phrase "Boop!"_
     *	_Example Input: 4_
     *	_Example Output: 0, 1, Boop, I'm sorry Dave. I'm afraid I can't do that., 4_
 
-5. _The program recognizes the number 1 in the return of numbers and changes it to the phrase "Beep!"_
+4. _The program recognizes the number 1 in the return of numbers and changes it to the phrase "Beep!"_
     *	_Example Input: 5_
     *	_Example Output: 0, Beep!, Boop!, I'm sorry Dave. I'm afraid I can't do that., 4, 5_
 
-6. _if the output number in the list of numbers contains both a 3 and a 2, the rules for a 3 take precident_  
+5. _if the output number in the list of numbers contains both a 3 and a 2, the rules for a 3 take precident_  
     *   _example Input: 23_
     *   _Example Output: Boop!(20), Beep!(21), Boop!(22), Im sorry Dave. I'm afraid I can't do that(23)_
     
-7. _if the output number in the list of numbers contains both a 2 and a 1, the rules for a 2 take precident_  
+6. _if the output number in the list of numbers contains both a 2 and a 1, the rules for a 2 take precident_  
     *   _example Input: 12_
     *   _Example Output: 9, Beep!(10), Beep!(11), Boop!(12)_
-8. _if the output number in the list of numbers contains both a 1 and a 3, the rules for a 3 take precident_  
+7. _if the output number in the list of numbers contains both a 1 and a 3, the rules for a 3 take precident_  
     *   _example Input: 23_
     *   _Example Output: Boop!(20), Beep!(21), Boop!(22), Im sorry Dave. I'm afraid I can't do that(23)_
 

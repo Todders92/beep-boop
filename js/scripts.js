@@ -10,22 +10,22 @@ var numberFunction = function(number, string) {
 $(document).ready(function() {
   $("form#form").submit(function(event) {
     event.preventDefault();
-    var makeItem = function(number) {
+    var addItem = function(number) {
       $(".results ul").append("<li>" + number + "</li>");
     };
     var numbers = parseInt($("input.input-number").val());
     $(".results ul").text("");
     for (var i = 0; i<= numbers; i ++) {
       if(numberFunction(i, "3")) {
-        makeItem("I'm Sorry John. I'm afraid I can't do that.");
+        addItem("I'm Sorry John. I'm afraid I can't do that.");
       } else if (numberFunction(i, "2")) {
-        makeItem("boop")
+        addItem("Boop")
       } else if (numberFunction(i ,"1")) {
-        makeItem("beep")
+        addItem("Beep!")
       } else{
-        makeItem(i);
+        addItem(i);
       }
     };
-    $(".results").show();
+    $("#results").show();
   });
 });
