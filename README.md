@@ -6,7 +6,7 @@
 
 ## Description
 
-_This webpage has the user input a number, and changes digits of the inputted number to phrases_
+_This webpage has the user input a number, and lists out all the numbers leading up to the input number in order. For any numbers with a 3 in it, the number is replaced with the phrase "I'm sorry Dave, I'm afraid I can't do that. For any numbers with a 2 in it, the number is replaced with the phrase "Boop". For any numbers with a 1 in it, the number is replaced with the phrase "Beep!". The rule that takes precident goes in order of importance from 3 to 2 to 1._
 
 ## Specs
 
@@ -31,12 +31,14 @@ _This webpage has the user input a number, and changes digits of the inputted nu
     *   _Example Output: Boop!(20), Beep!(21), Boop!(22), Im sorry Dave. I'm afraid I can't do that(23)_
     
 6. _if the output number in the list of numbers contains both a 2 and a 1, the rules for a 2 take precident_  
-    *   _example Input: 12_
+    *   _Example Input: 12_
     *   _Example Output: 9, Beep!(10), Beep!(11), Boop!(12)_
 7. _if the output number in the list of numbers contains both a 1 and a 3, the rules for a 3 take precident_  
     *   _example Input: 23_
     *   _Example Output: Boop!(20), Beep!(21), Boop!(22), Im sorry Dave. I'm afraid I can't do that(23)_
-
+8. _User can submit the form multiple times for new results_
+    * _Example Input: 30:submit, 23:submit_
+    * _Example Output: boop, boop, boop, I'm sorry Dave I'm afraid I can't do that._
 ## Known Bugs
 _none yet..._
 
